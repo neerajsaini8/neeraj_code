@@ -64,7 +64,7 @@ stocklist =["sbi ","itc"...50]
 
 i=0
 while i <50:
-    sql = "INSERT INTO stocks (open,high,low,close,volume,date) VALUES (%s, %s,%s, %s,%s,%s)"
+    sql = "INSERT INTO stocks (open,high,low,close,volume,date) VALUES (%s, %s,%s, %s,%s,%s)"   #convert this in variable string
     cur.execute(sql,val[i])    #val will insert data into table 
     i=i+1
 
